@@ -1,4 +1,5 @@
 import HomeItem from "../components/HomeItem.jsx";
+
 const Home = () => {
   const item = {
     id: "001",

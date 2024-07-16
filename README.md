@@ -78,3 +78,70 @@ myntra-react-clone/
    ```bash
    npm install
    ```
+
+### Running the Project:
+
+1. Start the backend server:
+
+```bash
+cd C:\Users\dipes\OneDrive\Desktop\9-Myntra Clone\2-actual-backend
+
+npm start
+```
+
+2. Start the frontend application:
+
+```bash
+cd C:\Users\dipes\OneDrive\Desktop\9-Myntra Clone\3-myntra-react-clone
+
+npm run dev
+```
+
+3. Open the browser and navigate to 'http://localhost:5173'
+
+## Technologies Used
+
+- React
+- Redux Toolkit
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- Fetch API
+
+# Components
+
+### HomeItem
+
+Displays individual items on the homepage.
+
+### BagItem
+
+Displays individual items in the shopping bag with options to remove them.
+
+### BagSummary
+
+Shows a summary of all items in the bag, including total price and discounts.
+
+# Redux Store
+
+### Slices
+
+#### itemsSlice.js
+
+Manages the state of items available for purchase.
+
+```javascript
+import { createSlice } from "@reduxjs/toolkit";
+
+const itemsSlice = createSlice({
+  name: "items",
+  initialState: [],
+  reducers: {
+    addInitialItems: (state, action) => {
+      return action.payload;
+    },
+  },
+});
+
+export const itemsActions = itemsSlice.actions;
+export default itemsSlice;
+```

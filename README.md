@@ -30,7 +30,7 @@ This is a clone of the Myntra website built using React and Redux. The project a
 
 ## Preview
 
-Here aare some previews of the Myntra React Clone project:
+Here are some previews of the Myntra React Clone project:
 
 ### HOME PAGE
 

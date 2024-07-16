@@ -28,6 +28,18 @@ This is a clone of the Myntra website built using React and Redux. The project a
 - Remove items from the shopping bag.
 - View the summary of the items in the bag.
 
+## Preview
+
+Here aare some previews of the Myntra React Clone project:
+
+### HOME PAGE
+
+![Myntra Home Page](./3-myntra-react-clone/public/images/Myntra_Preview_1.png)
+
+### BAG SUMMARY PAGE
+
+![Myntra Bag Summary Page](./3-myntra-react-clone/public/images/Mnyra_Preview_2.png)
+
 ## Getting Started
 
 ### Prerequisites

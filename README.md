@@ -38,7 +38,7 @@ Here aare some previews of the Myntra React Clone project:
 
 ### BAG SUMMARY PAGE
 
-![Myntra Bag Summary Page](./3-myntra-react-clone/public/images/Mnyra_Preview_2.png)
+![Myntra Bag Summary Page](./3-myntra-react-clone/public/images/Myntra_Preview_2.png)
 
 ## Getting Started
 

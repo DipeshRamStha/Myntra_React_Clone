@@ -145,3 +145,81 @@ const itemsSlice = createSlice({
 export const itemsActions = itemsSlice.actions;
 export default itemsSlice;
 ```
+
+#### bagSlice.js
+
+Manages the state of items in the shopping bag.
+
+```javascript
+import { createSlice } from "@reduxjs/toolkit";
+
+const bagSlice = createSlice({
+  name: "bag",
+  initialState: [],
+  reducers: {
+    addToBag: (state, action) => {
+      state.push(action.payload);
+    },
+    removeFromBag: (state, action) => {
+      return state.filter((itemId) => itemId !== action.payload);
+    },
+  },
+});
+
+export const bagActions = bagSlice.actions;
+export default bagSlice;
+```
+
+#### fetchStatusSlice.js
+
+Tracks the status of data fetching.
+
+```javascript
+import { createSlice } from "@reduxjs/toolkit";
+
+const fetchStatusSlice = createSlice({
+  name: "fetchStatus",
+  initialState: { fetchDone: false, fetching: false },
+  reducers: {
+    markFetchDone: (state) => {
+      state.fetchDone = true;
+    },
+    markFetchingStarted: (state) => {
+      state.fetching = true;
+    },
+    markFetchingFinished: (state) => {
+      state.fetching = false;
+    },
+  },
+});
+
+export const fetchStatusActions = fetchStatusSlice.actions;
+export default fetchStatusSlice;
+```
+
+# Store Configuration
+
+```javascript
+import { configureStore } from "@reduxjs/toolkit";
+import itemsSlice from "./itemsSlice";
+import fetchStatusSlice from "./fetchStatusSlice";
+import bagSlice from "./bagSlice";
+
+const myntraStore = configureStore({
+  reducer: {
+    items: itemsSlice.reducer,
+    fetchStatus: fetchStatusSlice.reducer,
+    bag: bagSlice.reducer,
+  },
+});
+
+export default myntraStore;
+```
+
+# Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+# License
+
+This project is licensed under the MIT License.

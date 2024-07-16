@@ -1,6 +1,6 @@
 # Myntra React Clone
 
-![Myntra Logo](path/to/your/logo.png)
+![Myntra Logo](public/images/myntra_logo.webp)
 
 ## Table of Contents
 
